@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Raleway:wght@400;500;700&display=swap');
+
+/* CSS RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: "oswald", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+/* {1} NAVIGATION SECTION */
+.nav {
+    overflow: auto;
+    width: 85%;
+    margin: 1em auto;
+}
+
+.nav h1 {
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+}
+
+.nav h1 a {
+    font-family: "Osawald", sans-serif ; 
+    color: #96746b;
+}
+
+.nav ul {
+    list-style: none;  
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.nav ul li{
+    display: inline-block;
+         /* 
+        this will make the element to be inline
+        inline-block ~~ this will make the element to be inline but it will have a width and height
+
+        Other values:
+        block ~~ this will make the element to be block
+        inline-block ~~ this will make the element to be inline but it will have a width and height
+        inline ~~ this will make the element to be inline
+        */
+    margin-left: 1em; /* left margin of 1em */
+}
+
+.nav ul a{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    color: #312a26;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 670px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translateY(-50%);
+    width: 45%;
+}
+
+.banner-text h2 {
+    color: #c7a17a;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+.banner-text h2 span {
+    color: #96746b
+}
+
+.banner p{
+    color:#fff
+}
+
+.banner a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: #312a26;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    margin-top: 2em;
+}
+
+/* {3} Ads Section */
+.ads {
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items {
+    width: 48.5%;
+    height: 350px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.ads-item1 { 
+    background-image: url('../images/ads-img1.jpg');
+    margin-right: 1%;
+}
+
+.ads-item2 {
+    background-image: url('../images/ads-img2.jpg');
+}
+
+.ads-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.ads-text h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a {
+    display: block;
+    font-family: "Raleway","sans-serif";
+    font-weight: 700px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.merch {
+    width: 85%;
+    margin: 4em auto;
+}
+
+/* {4} Merch Section*/
+.merch {
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header span {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    color: #c7a17a;
+}
+
+.section-header h2 {
+    text-transform: uppercase;
+    color: #312a26;
+}
+
+.section-header hr {
+    background-color: #c7a17a;
+    height: 2px;
+    width: 25%;
+    margin: auto;
+}
+
+.merch-gallery {
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.merch-items {
+    width: 24%;
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8) {
+    margin-right: 0;
+}
+
+.merch-items img {
+    width: 100%;
+    height: 350px;
+}
+
+/* {5}discount */
+.discount {
+    width: 85%;
+    height: 350px;
+    margin: 4em auto;
+    background-image: url('../images/discount-img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.discount-text {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.discount span {
+    font-family: "Raleway",sans-serif;
+    color: #fff;
+    font-style: italic;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount h2 {
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    background-color: #ffffff80;
+    color: #312a26;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700px;
+    margin-top: 1em;
+}
+
+
+/* {6} Merchandise Sale */
+.ads {
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+
+.ads-items {
+    width: 48.5%;
+    height: 350px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 3%;
+    position: relative;
+}
+
+.ads-item3 { 
+    background-image: url('../images/ads-img3.jpg');
+    margin-right: 1%;
+}
+
+.ads-item4 {
+    background-image: url('../images/ads-img4.jpg');
+}
+
+.ads-item5 {
+    background-image: url('../images/ads-img5.jpg');
+    margin-right: 1%;
+}
+
+.ads-item6 {
+    background-image: url('../images/ads-img6.jpg');
+}
+
+
+.ads-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translateY(-50%);
+    width: 40%;
+}
+
+.ads-text h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+    line-height: 1.2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.ads-text a {
+    display: block;
+    font-family: "Raleway","sans-serif";
+    font-weight: 700px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.merch {
+    width: 85%;
+    margin: 4em auto;
+}
+
+
+/* {8} Reservation */ 後でどこ間違えているのか、確認！
+/* .section-header { 
+    text-align: center;
+}
+
+.reservation {
+    width: 85%;
+    margin: 4em auto;
+}
+
+.form {
+    overflow: auto;
+}
+
+.form-group {
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 650px;
+}
+
+.form-group h3 {
+    text-align: center;
+}
+
+.form-group :nth-child(1) {
+    margin-right: 1%;
+}
+
+.form input, label, select, textarea {
+    display:inline-block;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.res-time {
+    width: auto;
+} 
+
+.form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.form p {
+    margin: 1em;
+    text-align: center;
+    font-weight: 700px;
+}
+*/
+
+.reservationn {
+    width: 85%;
+    margin: 4em auto;
+}
+
+.form {
+    overflow: auto;
+}
+
+.form-group {
+    margin-top: 2em;
+    background-color: #f2f2f2;
+    float: left;
+    width: 49.5%;
+    border-radius: 5px;
+    padding: 2em;
+    height: 700px;
+}
+/* Left Form */
+.form-group :nth-child(1) {
+    margin-right: 1%;
+}
+
+form input,
+form label,
+form select,
+form textarea {
+    display:inline-block;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+form label {
+   font-weight: 700;
+   padding: 0;
+   margin-bottom: 5em; 
+}
+
+.res-time {
+    width: auto;
+} 
+
+.form p {
+    margin: 1em;
+    text-align: center;
+    font-weight: 700px;
+}
+
+.form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+/* h3::after is used here as a pseudo element because we want to add an image after h3 tag
+after h3 tag without adding element to the html form */
+
+form h3::after {
+    content: "";
+    background-image: url('../image/reservation-cards.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: 150px;
+    height: 30px;
+    margin: auto;
+}
+
+.res-agreement * {
+    width: auto;
+}
+
+form input[type="submit"] {
+    background-color: #c7a17a;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* {9}  Footer */
+<!-- [9] Footer Section -->
+        <div class="footer">
+            <div class="footer-contents">
+                <!-- Column1 -->
+                <div class="footer-widgets">
+                    <h3>Opening Hours</h3>
+                    <table>
+                        <tr>
+                            <th>Day</th>
+                            <th>..........</th>
+                            <th>Availability</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>..........</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>..........</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>..........</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>..........</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>..........</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>..........</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>..........</td>
+                            <td>09:00 - 22:00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Column2 -->
+                <div class="footer-widgets">
+                    <h3>Latest Posts</h3>
+
+                    <h4>Expand your mind, Change Everything</h4>
+                    <p>14.02.2017</p>
+
+                    <h4>Places to get lost</h4>
+                    <p>14.02.2017</p>
+
+                    <h4>Lewis Howes</h4>
+                    <p>14.02.2017</p>
+
+                    <h4>Elevate your Expectation</h4>
+                    <p>14.02.2017</p>
+                </div>
+                <!-- Column3 -->
+                <div class="footer-widgets">
+                    <h3>Contact Us</h3>
+                    <p>info@coffeebean.com</p>
+                    <p>1-444-123-4567</p>
+                    <p>Raymond Boulevard 224, New York</p>
+
+                    <h3>The Last Standard Post</h3>
+                    <form action="#" method="#" class="footer-form">
+                        <input type="search" name="search" id="search">
+                        <input type="submit" value="search">
+                    </form>
+                </div>
+
+                <!-- Column4 -->
+                <div class="footer-widgets">
+                    <h3>Other Locations</h3>
+
+                    <h4>Coffee Bean Philippines</h4>
+                    <p>1234 IT Park</p>
+                    <p>Cebu City</p>
+
+                    <h4>Coffee Bean Japan</h4>
+                    <p>1234 Tokyo Park</p>
+                    <p>Tokyo, Japan</p>
+                </div>
+            </div><!-- End of Footer Widgets -->
+        </div>
+        <!-- Lower Footer -->
+        <div class="footer-social">
+            <div class="social-widget">
+                <h3>Coffee Bean</h3>
+            </div>
+            <div class="social-widget">
+                <a href="#"><img src="assets/images/icon-fb.png" alt="Facebook Icon"></a>
+                <a href="#"><img src="assets/images/icon-ig.png" alt="Instagram Icon"></a>
+                <a href="#"><img src="assets/images/icon-tw.png" alt="Twitter Icon"></a>
+            </div>
+            <div class="social-widget">
+                <p>&copy; 2023 | Kredo Japan</p>
+            </div>
+        </div><!-- End of Footer Section -->
+        
